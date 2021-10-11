@@ -1,0 +1,371 @@
+2021-08-23 14:12:31.795 UTC 022a DEBU [msp] Setup -> Setting up the MSP manager (3 msps)
+2021-08-23 14:12:31.795 UTC 022b DEBU [msp] Setup -> MSP manager setup complete, setup 3 msps
+2021-08-23 14:12:31.795 UTC 022c DEBU [policies] NewManagerImpl -> Proposed new policy Readers for Channel/Orderer/OrdererOrg
+2021-08-23 14:12:31.795 UTC 022d DEBU [policies] NewManagerImpl -> Proposed new policy Writers for Channel/Orderer/OrdererOrg
+2021-08-23 14:12:31.795 UTC 022e DEBU [policies] NewManagerImpl -> Proposed new policy Admins for Channel/Orderer/OrdererOrg
+2021-08-23 14:12:31.795 UTC 022f DEBU [policies] NewManagerImpl -> Proposed new policy Writers for Channel/Orderer
+2021-08-23 14:12:31.795 UTC 0230 DEBU [policies] NewManagerImpl -> Proposed new policy Admins for Channel/Orderer
+2021-08-23 14:12:31.795 UTC 0231 DEBU [policies] NewManagerImpl -> Proposed new policy BlockValidation for Channel/Orderer
+2021-08-23 14:12:31.795 UTC 0232 DEBU [policies] NewManagerImpl -> Proposed new policy Readers for Channel/Orderer
+2021-08-23 14:12:31.795 UTC 0233 DEBU [policies] NewManagerImpl -> Proposed new policy Admins for Channel/Application/Org1MSP
+2021-08-23 14:12:31.795 UTC 0234 DEBU [policies] NewManagerImpl -> Proposed new policy Endorsement for Channel/Application/Org1MSP
+2021-08-23 14:12:31.795 UTC 0235 DEBU [policies] NewManagerImpl -> Proposed new policy Readers for Channel/Application/Org1MSP
+2021-08-23 14:12:31.795 UTC 0236 DEBU [policies] NewManagerImpl -> Proposed new policy Writers for Channel/Application/Org1MSP
+2021-08-23 14:12:31.795 UTC 0237 DEBU [policies] NewManagerImpl -> Proposed new policy Readers for Channel/Application/Org2MSP
+2021-08-23 14:12:31.795 UTC 0238 DEBU [policies] NewManagerImpl -> Proposed new policy Writers for Channel/Application/Org2MSP
+2021-08-23 14:12:31.795 UTC 0239 DEBU [policies] NewManagerImpl -> Proposed new policy Admins for Channel/Application/Org2MSP
+2021-08-23 14:12:31.795 UTC 023a DEBU [policies] NewManagerImpl -> Proposed new policy Endorsement for Channel/Application/Org2MSP
+2021-08-23 14:12:31.795 UTC 023b DEBU [policies] NewManagerImpl -> Proposed new policy Endorsement for Channel/Application
+2021-08-23 14:12:31.795 UTC 023c DEBU [policies] NewManagerImpl -> Proposed new policy LifecycleEndorsement for Channel/Application
+2021-08-23 14:12:31.795 UTC 023d DEBU [policies] NewManagerImpl -> Proposed new policy Readers for Channel/Application
+2021-08-23 14:12:31.795 UTC 023e DEBU [policies] NewManagerImpl -> Proposed new policy Writers for Channel/Application
+2021-08-23 14:12:31.795 UTC 023f DEBU [policies] NewManagerImpl -> Proposed new policy Admins for Channel/Application
+2021-08-23 14:12:31.795 UTC 0240 DEBU [policies] NewManagerImpl -> Proposed new policy Writers for Channel
+2021-08-23 14:12:31.795 UTC 0241 DEBU [policies] NewManagerImpl -> Proposed new policy Admins for Channel
+2021-08-23 14:12:31.795 UTC 0242 DEBU [policies] NewManagerImpl -> Proposed new policy Readers for Channel
+2021-08-23 14:12:31.795 UTC 0243 DEBU [common.configtx] addToMap -> Adding to config map: [Group]  /Channel
+2021-08-23 14:12:31.795 UTC 0244 DEBU [common.configtx] addToMap -> Adding to config map: [Group]  /Channel/Orderer
+2021-08-23 14:12:31.795 UTC 0245 DEBU [common.configtx] addToMap -> Adding to config map: [Group]  /Channel/Orderer/OrdererOrg
+2021-08-23 14:12:31.795 UTC 0246 DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Orderer/OrdererOrg/Endpoints
+2021-08-23 14:12:31.795 UTC 0247 DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Orderer/OrdererOrg/MSP
+2021-08-23 14:12:31.796 UTC 0248 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Orderer/OrdererOrg/Readers
+2021-08-23 14:12:31.796 UTC 0249 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Orderer/OrdererOrg/Writers
+2021-08-23 14:12:31.796 UTC 024a DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Orderer/OrdererOrg/Admins
+2021-08-23 14:12:31.796 UTC 024b DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Orderer/BatchTimeout
+2021-08-23 14:12:31.796 UTC 024c DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Orderer/ChannelRestrictions
+2021-08-23 14:12:31.796 UTC 024d DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Orderer/Capabilities
+2021-08-23 14:12:31.796 UTC 024e DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Orderer/ConsensusType
+2021-08-23 14:12:31.796 UTC 024f DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Orderer/BatchSize
+2021-08-23 14:12:31.796 UTC 0250 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Orderer/Writers
+2021-08-23 14:12:31.796 UTC 0251 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Orderer/Admins
+2021-08-23 14:12:31.796 UTC 0252 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Orderer/BlockValidation
+2021-08-23 14:12:31.796 UTC 0253 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Orderer/Readers
+2021-08-23 14:12:31.796 UTC 0254 DEBU [common.configtx] addToMap -> Adding to config map: [Group]  /Channel/Application
+2021-08-23 14:12:31.796 UTC 0255 DEBU [common.configtx] addToMap -> Adding to config map: [Group]  /Channel/Application/Org1MSP
+2021-08-23 14:12:31.796 UTC 0256 DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Application/Org1MSP/MSP
+2021-08-23 14:12:31.796 UTC 0257 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org1MSP/Writers
+2021-08-23 14:12:31.796 UTC 0258 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org1MSP/Admins
+2021-08-23 14:12:31.796 UTC 0259 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org1MSP/Endorsement
+2021-08-23 14:12:31.796 UTC 025a DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org1MSP/Readers
+2021-08-23 14:12:31.796 UTC 025b DEBU [common.configtx] addToMap -> Adding to config map: [Group]  /Channel/Application/Org2MSP
+2021-08-23 14:12:31.796 UTC 025c DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Application/Org2MSP/MSP
+2021-08-23 14:12:31.796 UTC 025d DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org2MSP/Endorsement
+2021-08-23 14:12:31.796 UTC 025e DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org2MSP/Readers
+2021-08-23 14:12:31.796 UTC 025f DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org2MSP/Writers
+2021-08-23 14:12:31.796 UTC 0260 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Org2MSP/Admins
+2021-08-23 14:12:31.796 UTC 0261 DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Application/Capabilities
+2021-08-23 14:12:31.796 UTC 0262 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Readers
+2021-08-23 14:12:31.796 UTC 0263 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Writers
+2021-08-23 14:12:31.796 UTC 0264 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Admins
+2021-08-23 14:12:31.796 UTC 0265 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/Endorsement
+2021-08-23 14:12:31.796 UTC 0266 DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Application/LifecycleEndorsement
+2021-08-23 14:12:31.796 UTC 0267 DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/OrdererAddresses
+2021-08-23 14:12:31.796 UTC 0268 DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/Capabilities
+2021-08-23 14:12:31.796 UTC 0269 DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/HashingAlgorithm
+2021-08-23 14:12:31.796 UTC 026a DEBU [common.configtx] addToMap -> Adding to config map: [Value]  /Channel/BlockDataHashingStructure
+2021-08-23 14:12:31.796 UTC 026b DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Writers
+2021-08-23 14:12:31.796 UTC 026c DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Admins
+2021-08-23 14:12:31.796 UTC 026d DEBU [common.configtx] addToMap -> Adding to config map: [Policy] /Channel/Readers
+2021-08-23 14:12:31.798 UTC 026e DEBU [blkstorage] Next -> Initializing block stream for iterator. itr.maxBlockNumAvailable=4
+2021-08-23 14:12:31.798 UTC 026f DEBU [blkstorage] newBlockfileStream -> newBlockfileStream(): filePath=[/var/hyperledger/production/orderer/chains/channel1/blockfile_000000], startOffset=[40282]
+2021-08-23 14:12:31.798 UTC 0270 DEBU [blkstorage] nextBlockBytesAndPlacementInfo -> Remaining bytes=[5423], Going to peek [8] bytes
+2021-08-23 14:12:31.798 UTC 0271 DEBU [blkstorage] nextBlockBytesAndPlacementInfo -> Returning blockbytes - length=[5421], placementInfo={fileNum=[0], startOffset=[40282], bytesOffset=[40284]}
+2021-08-23 14:12:31.798 UTC 0272 DEBU [blkstorage] nextBlockBytesAndPlacementInfo -> blockbytes [5421] read from file [0]
+2021-08-23 14:12:31.798 UTC 0273 DEBU [orderer.commmon.multichannel] newBlockWriter -> [channel: channel1] Creating block writer for tip of chain (blockNumber=4, lastConfigBlockNum=0, lastConfigSeq=0)
+2021-08-23 14:12:31.799 UTC 0274 INFO [orderer.consensus.hlmirbft] HandleChain -> Without system channel: after eviction Registrar.SwitchToFollower will be called
+2021-08-23 14:12:31.849 UTC 0275 DEBU [blkstorage] Next -> Initializing block stream for iterator. itr.maxBlockNumAvailable=4
+2021-08-23 14:12:31.849 UTC 0276 DEBU [blkstorage] newBlockfileStream -> newBlockfileStream(): filePath=[/var/hyperledger/production/orderer/chains/channel1/blockfile_000000], startOffset=[40282]
+2021-08-23 14:12:31.849 UTC 0277 DEBU [blkstorage] nextBlockBytesAndPlacementInfo -> Remaining bytes=[5423], Going to peek [8] bytes
+2021-08-23 14:12:31.849 UTC 0278 DEBU [blkstorage] nextBlockBytesAndPlacementInfo -> Returning blockbytes - length=[5421], placementInfo={fileNum=[0], startOffset=[40282], bytesOffset=[40284]}
+2021-08-23 14:12:31.849 UTC 0279 DEBU [blkstorage] nextBlockBytesAndPlacementInfo -> blockbytes [5421] read from file [0]
+2021-08-23 14:12:31.850 UTC 027a DEBU [orderer.commmon.multichannel] newChainSupport -> [channel: channel1] Done creating channel support resources
+2021-08-23 14:12:31.850 UTC 027b INFO [orderer.consensus.hlmirbft] Start -> Starting MirBFT node channel=channel1 node=2
+2021-08-23 14:12:31.850 UTC 027c INFO [orderer.common.cluster] Configure -> Entering, channel: channel1, nodes: [ID: 1,
+Endpoint: orderer.example.com:7050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICYzCCAgqgAwIBAgIQXAq8hLNzCOwaFRnE4y6B3jAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWDELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHDAaBgNVBAMTE29yZGVyZXIuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAStJjwfGv0m5264ZufrVYtBoRueCZVMAZyPRMruSy6R0wLp
+x+05fWCZkLmSTGvKXyCbIE2pHpMoBgL6+cH3XH3zo4GhMIGeMA4GA1UdDwEB/wQE
+AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw
+ADArBgNVHSMEJDAigCB723Di79rZ6aiRXabDvD86lyzWetzyiPpdlhz+9oehvjAy
+BgNVHREEKzApghNvcmRlcmVyLmV4YW1wbGUuY29tggdvcmRlcmVygglsb2NhbGhv
+c3QwCgYIKoZIzj0EAwIDRwAwRAIgVcH0XIubzVEiPqV6w3wDSuEzmpx7ynDUuUFu
+C0KrXBMCIA/a8laI/Y3VXlxlS4QwpUt9KbO7Uc0IjANpxDm35SRX
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICYzCCAgqgAwIBAgIQXAq8hLNzCOwaFRnE4y6B3jAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWDELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHDAaBgNVBAMTE29yZGVyZXIuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAStJjwfGv0m5264ZufrVYtBoRueCZVMAZyPRMruSy6R0wLp
+x+05fWCZkLmSTGvKXyCbIE2pHpMoBgL6+cH3XH3zo4GhMIGeMA4GA1UdDwEB/wQE
+AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw
+ADArBgNVHSMEJDAigCB723Di79rZ6aiRXabDvD86lyzWetzyiPpdlhz+9oehvjAy
+BgNVHREEKzApghNvcmRlcmVyLmV4YW1wbGUuY29tggdvcmRlcmVygglsb2NhbGhv
+c3QwCgYIKoZIzj0EAwIDRwAwRAIgVcH0XIubzVEiPqV6w3wDSuEzmpx7ynDUuUFu
+C0KrXBMCIA/a8laI/Y3VXlxlS4QwpUt9KbO7Uc0IjANpxDm35SRX
+-----END CERTIFICATE-----
+ ID: 3,
+Endpoint: orderer3.example.com:7050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICZzCCAg2gAwIBAgIQZ4keVib8/Nivcch+tVH55zAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXIzLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEYhFoBTlBkl/FcIEpMuktO/y2EYk0aPcBX+n2uDpsjvDC
+CqXPuN82SVLsQYszGafyqIV42VOcSfrR1dMQbw1PQ6OBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjMuZXhhbXBsZS5jb22CCG9yZGVyZXIzgglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDSAAwRQIhAIhH4LTwvYheRd8wuLsvWcoW94UIbB17
+Y3pkWJCWEhL7AiB3ZuaZFrwHes9JtqsHdpHRiQbAjBrdptLv5wiKynSlAQ==
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICZzCCAg2gAwIBAgIQZ4keVib8/Nivcch+tVH55zAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXIzLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEYhFoBTlBkl/FcIEpMuktO/y2EYk0aPcBX+n2uDpsjvDC
+CqXPuN82SVLsQYszGafyqIV42VOcSfrR1dMQbw1PQ6OBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjMuZXhhbXBsZS5jb22CCG9yZGVyZXIzgglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDSAAwRQIhAIhH4LTwvYheRd8wuLsvWcoW94UIbB17
+Y3pkWJCWEhL7AiB3ZuaZFrwHes9JtqsHdpHRiQbAjBrdptLv5wiKynSlAQ==
+-----END CERTIFICATE-----
+ ID: 4,
+Endpoint: orderer4.example.com:7050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICZjCCAg2gAwIBAgIQQqL+5B+xOjRhCdbVXsgJIjAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXI0LmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEf9KMb/Lg7Kn+dIs7nP3+INqmAaMJpRUV/kbYJu91dPBx
+TivmVlnfvFCujrb379HuSFBn/vnifCbEBiEV9dqdpqOBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjQuZXhhbXBsZS5jb22CCG9yZGVyZXI0gglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDRwAwRAIgcPKfdRDcB4J2hOK8agUzL/0hue8fJaWI
+J24eOJMy9KICIGE66scXy8PrEHKQVM353EaRkrMg1lDCvCa3b8/H+L2C
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICZjCCAg2gAwIBAgIQQqL+5B+xOjRhCdbVXsgJIjAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXI0LmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEf9KMb/Lg7Kn+dIs7nP3+INqmAaMJpRUV/kbYJu91dPBx
+TivmVlnfvFCujrb379HuSFBn/vnifCbEBiEV9dqdpqOBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjQuZXhhbXBsZS5jb22CCG9yZGVyZXI0gglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDRwAwRAIgcPKfdRDcB4J2hOK8agUzL/0hue8fJaWI
+J24eOJMy9KICIGE66scXy8PrEHKQVM353EaRkrMg1lDCvCa3b8/H+L2C
+-----END CERTIFICATE-----
+]
+2021-08-23 14:12:31.850 UTC 027d INFO [orderer.common.cluster] updateStubInMapping -> Allocating a new stub for node 1 with endpoint of orderer.example.com:7050 for channel channel1
+2021-08-23 14:12:31.850 UTC 027e INFO [orderer.common.cluster] updateStubInMapping -> Deactivating node 1 in channel channel1 with endpoint of orderer.example.com:7050 due to TLS certificate change
+2021-08-23 14:12:31.851 UTC 027f DEBU [orderer.common.cluster] func1 -> Connecting to ID: 1,
+Endpoint: orderer.example.com:7050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICYzCCAgqgAwIBAgIQXAq8hLNzCOwaFRnE4y6B3jAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWDELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHDAaBgNVBAMTE29yZGVyZXIuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAStJjwfGv0m5264ZufrVYtBoRueCZVMAZyPRMruSy6R0wLp
+x+05fWCZkLmSTGvKXyCbIE2pHpMoBgL6+cH3XH3zo4GhMIGeMA4GA1UdDwEB/wQE
+AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw
+ADArBgNVHSMEJDAigCB723Di79rZ6aiRXabDvD86lyzWetzyiPpdlhz+9oehvjAy
+BgNVHREEKzApghNvcmRlcmVyLmV4YW1wbGUuY29tggdvcmRlcmVygglsb2NhbGhv
+c3QwCgYIKoZIzj0EAwIDRwAwRAIgVcH0XIubzVEiPqV6w3wDSuEzmpx7ynDUuUFu
+C0KrXBMCIA/a8laI/Y3VXlxlS4QwpUt9KbO7Uc0IjANpxDm35SRX
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICYzCCAgqgAwIBAgIQXAq8hLNzCOwaFRnE4y6B3jAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWDELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHDAaBgNVBAMTE29yZGVyZXIuZXhhbXBsZS5jb20wWTATBgcqhkjOPQIB
+BggqhkjOPQMBBwNCAAStJjwfGv0m5264ZufrVYtBoRueCZVMAZyPRMruSy6R0wLp
+x+05fWCZkLmSTGvKXyCbIE2pHpMoBgL6+cH3XH3zo4GhMIGeMA4GA1UdDwEB/wQE
+AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw
+ADArBgNVHSMEJDAigCB723Di79rZ6aiRXabDvD86lyzWetzyiPpdlhz+9oehvjAy
+BgNVHREEKzApghNvcmRlcmVyLmV4YW1wbGUuY29tggdvcmRlcmVygglsb2NhbGhv
+c3QwCgYIKoZIzj0EAwIDRwAwRAIgVcH0XIubzVEiPqV6w3wDSuEzmpx7ynDUuUFu
+C0KrXBMCIA/a8laI/Y3VXlxlS4QwpUt9KbO7Uc0IjANpxDm35SRX
+-----END CERTIFICATE-----
+ for channel channel1
+2021-08-23 14:12:31.852 UTC 0280 DEBU [grpc] InfoDepth -> [core]parsed scheme: ""
+2021-08-23 14:12:31.852 UTC 0281 DEBU [grpc] InfoDepth -> [core]scheme "" not registered, fallback to default scheme
+2021-08-23 14:12:31.852 UTC 0282 DEBU [grpc] InfoDepth -> [core]ccResolverWrapper: sending update to cc: {[{orderer.example.com:7050  <nil> 0 <nil>}] <nil> <nil>}
+2021-08-23 14:12:31.852 UTC 0283 DEBU [grpc] InfoDepth -> [core]ClientConn switching balancer to "pick_first"
+2021-08-23 14:12:31.852 UTC 0284 DEBU [grpc] InfoDepth -> [core]Channel switches to new LB policy "pick_first"
+2021-08-23 14:12:31.852 UTC 0285 DEBU [grpc] InfoDepth -> [core]Subchannel Connectivity change to CONNECTING
+2021-08-23 14:12:31.852 UTC 0286 INFO [orderer.common.cluster] updateStubInMapping -> Allocating a new stub for node 3 with endpoint of orderer3.example.com:7050 for channel channel1
+2021-08-23 14:12:31.852 UTC 0287 INFO [orderer.common.cluster] updateStubInMapping -> Deactivating node 3 in channel channel1 with endpoint of orderer3.example.com:7050 due to TLS certificate change
+2021-08-23 14:12:31.852 UTC 0288 DEBU [grpc] InfoDepth -> [core]pickfirstBalancer: UpdateSubConnState: 0xc0008637c0, {CONNECTING <nil>}
+2021-08-23 14:12:31.853 UTC 0289 DEBU [orderer.common.cluster] func1 -> Connecting to ID: 3,
+Endpoint: orderer3.example.com:7050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICZzCCAg2gAwIBAgIQZ4keVib8/Nivcch+tVH55zAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXIzLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEYhFoBTlBkl/FcIEpMuktO/y2EYk0aPcBX+n2uDpsjvDC
+CqXPuN82SVLsQYszGafyqIV42VOcSfrR1dMQbw1PQ6OBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjMuZXhhbXBsZS5jb22CCG9yZGVyZXIzgglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDSAAwRQIhAIhH4LTwvYheRd8wuLsvWcoW94UIbB17
+Y3pkWJCWEhL7AiB3ZuaZFrwHes9JtqsHdpHRiQbAjBrdptLv5wiKynSlAQ==
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICZzCCAg2gAwIBAgIQZ4keVib8/Nivcch+tVH55zAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXIzLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEYhFoBTlBkl/FcIEpMuktO/y2EYk0aPcBX+n2uDpsjvDC
+CqXPuN82SVLsQYszGafyqIV42VOcSfrR1dMQbw1PQ6OBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjMuZXhhbXBsZS5jb22CCG9yZGVyZXIzgglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDSAAwRQIhAIhH4LTwvYheRd8wuLsvWcoW94UIbB17
+Y3pkWJCWEhL7AiB3ZuaZFrwHes9JtqsHdpHRiQbAjBrdptLv5wiKynSlAQ==
+-----END CERTIFICATE-----
+ for channel channel1
+2021-08-23 14:12:31.853 UTC 028a DEBU [grpc] InfoDepth -> [core]Channel Connectivity change to CONNECTING
+2021-08-23 14:12:31.853 UTC 028b DEBU [grpc] InfoDepth -> [core]Subchannel picks a new address "orderer.example.com:7050" to connect
+2021-08-23 14:12:31.854 UTC 028c DEBU [grpc] InfoDepth -> [core]parsed scheme: ""
+2021-08-23 14:12:31.854 UTC 028d DEBU [grpc] InfoDepth -> [core]scheme "" not registered, fallback to default scheme
+2021-08-23 14:12:31.854 UTC 028e DEBU [grpc] InfoDepth -> [core]ccResolverWrapper: sending update to cc: {[{orderer3.example.com:7050  <nil> 0 <nil>}] <nil> <nil>}
+2021-08-23 14:12:31.854 UTC 028f DEBU [grpc] InfoDepth -> [core]ClientConn switching balancer to "pick_first"
+2021-08-23 14:12:31.854 UTC 0290 DEBU [grpc] InfoDepth -> [core]Channel switches to new LB policy "pick_first"
+2021-08-23 14:12:31.854 UTC 0291 DEBU [grpc] InfoDepth -> [core]Subchannel Connectivity change to CONNECTING
+2021-08-23 14:12:31.854 UTC 0292 INFO [orderer.common.cluster] updateStubInMapping -> Allocating a new stub for node 4 with endpoint of orderer4.example.com:7050 for channel channel1
+2021-08-23 14:12:31.854 UTC 0293 INFO [orderer.common.cluster] updateStubInMapping -> Deactivating node 4 in channel channel1 with endpoint of orderer4.example.com:7050 due to TLS certificate change
+2021-08-23 14:12:31.854 UTC 0294 DEBU [grpc] InfoDepth -> [core]Subchannel picks a new address "orderer3.example.com:7050" to connect
+2021-08-23 14:12:31.855 UTC 0295 DEBU [orderer.common.cluster] func1 -> Connecting to ID: 4,
+Endpoint: orderer4.example.com:7050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICZjCCAg2gAwIBAgIQQqL+5B+xOjRhCdbVXsgJIjAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXI0LmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEf9KMb/Lg7Kn+dIs7nP3+INqmAaMJpRUV/kbYJu91dPBx
+TivmVlnfvFCujrb379HuSFBn/vnifCbEBiEV9dqdpqOBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjQuZXhhbXBsZS5jb22CCG9yZGVyZXI0gglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDRwAwRAIgcPKfdRDcB4J2hOK8agUzL/0hue8fJaWI
+J24eOJMy9KICIGE66scXy8PrEHKQVM353EaRkrMg1lDCvCa3b8/H+L2C
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICZjCCAg2gAwIBAgIQQqL+5B+xOjRhCdbVXsgJIjAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIxMDgyMzE0MDEwMFoXDTMxMDgyMTE0MDEwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXI0LmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEf9KMb/Lg7Kn+dIs7nP3+INqmAaMJpRUV/kbYJu91dPBx
+TivmVlnfvFCujrb379HuSFBn/vnifCbEBiEV9dqdpqOBozCBoDAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAge9tw4u/a2emokV2mw7w/Opcs1nrc8oj6XZYc/vaHob4w
+NAYDVR0RBC0wK4IUb3JkZXJlcjQuZXhhbXBsZS5jb22CCG9yZGVyZXI0gglsb2Nh
+bGhvc3QwCgYIKoZIzj0EAwIDRwAwRAIgcPKfdRDcB4J2hOK8agUzL/0hue8fJaWI
+J24eOJMy9KICIGE66scXy8PrEHKQVM353EaRkrMg1lDCvCa3b8/H+L2C
+-----END CERTIFICATE-----
+ for channel channel1
+2021-08-23 14:12:31.855 UTC 0296 DEBU [grpc] InfoDepth -> [core]pickfirstBalancer: UpdateSubConnState: 0xc00087b410, {CONNECTING <nil>}
+2021-08-23 14:12:31.855 UTC 0297 DEBU [grpc] InfoDepth -> [core]Channel Connectivity change to CONNECTING
+2021-08-23 14:12:31.856 UTC 0298 DEBU [grpc] InfoDepth -> [core]parsed scheme: ""
+2021-08-23 14:12:31.856 UTC 0299 DEBU [grpc] InfoDepth -> [core]scheme "" not registered, fallback to default scheme
+2021-08-23 14:12:31.856 UTC 029a DEBU [grpc] InfoDepth -> [core]ccResolverWrapper: sending update to cc: {[{orderer4.example.com:7050  <nil> 0 <nil>}] <nil> <nil>}
+2021-08-23 14:12:31.856 UTC 029b DEBU [grpc] InfoDepth -> [core]ClientConn switching balancer to "pick_first"
+2021-08-23 14:12:31.856 UTC 029c DEBU [grpc] InfoDepth -> [core]Channel switches to new LB policy "pick_first"
+2021-08-23 14:12:31.856 UTC 029d DEBU [grpc] InfoDepth -> [core]Subchannel Connectivity change to CONNECTING
+2021-08-23 14:12:31.856 UTC 029e INFO [orderer.common.cluster] func1 -> 3 exists in both old and new membership for channel channel1 , skipping its deactivation
+2021-08-23 14:12:31.856 UTC 029f INFO [orderer.common.cluster] func1 -> 4 exists in both old and new membership for channel channel1 , skipping its deactivation
+2021-08-23 14:12:31.856 UTC 02a0 INFO [orderer.common.cluster] func1 -> 1 exists in both old and new membership for channel channel1 , skipping its deactivation
+2021-08-23 14:12:31.856 UTC 02a1 DEBU [grpc] InfoDepth -> [core]Subchannel picks a new address "orderer4.example.com:7050" to connect
+2021-08-23 14:12:31.856 UTC 02a3 INFO [orderer.common.cluster] Configure -> Exiting
+2021-08-23 14:12:31.856 UTC 02a2 DEBU [grpc] InfoDepth -> [core]pickfirstBalancer: UpdateSubConnState: 0xc00090d060, {CONNECTING <nil>}
+2021-08-23 14:12:31.856 UTC 02a4 INFO [orderer.consensus.hlmirbft] start -> Node Fresh Status : %!(EXTRA bool=false) channel=channel1 node=2
+2021-08-23 14:12:31.856 UTC 02a5 DEBU [grpc] InfoDepth -> [core]Channel Connectivity change to CONNECTING
+2021-08-23 14:12:31.856 UTC 02a6 DEBU [orderer.consensus.hlmirbft] start -> Starting mirbft node: #peers: 4 channel=channel1 node=2
+2021-08-23 14:12:31.857 UTC 02a7 INFO [orderer.consensus.hlmirbft] start -> Starting mirbft node to join an existing channel channel=channel1 node=2
+2021-08-23 14:12:31.945 UTC 02a8 DEBU [comm.tls] ClientHandshake -> Client TLS handshake completed in 4.827527ms remoteaddress=172.24.0.3:7050
+2021-08-23 14:12:31.947 UTC 02a9 DEBU [grpc] InfoDepth -> [core]Subchannel Connectivity change to READY
+2021-08-23 14:12:32.065 UTC 02aa DEBU [grpc] InfoDepth -> [core]pickfirstBalancer: UpdateSubConnState: 0xc00090d060, {READY <nil>}
+2021-08-23 14:12:32.065 UTC 02ab DEBU [grpc] InfoDepth -> [core]Channel Connectivity change to READY
+2021-08-23 14:12:32.068 UTC 02ac DEBU [comm.tls] ClientHandshake -> Client TLS handshake completed in 128.357023ms remoteaddress=172.24.0.5:7050
+2021-08-23 14:12:32.069 UTC 02ad DEBU [comm.tls] ClientHandshake -> Client TLS handshake completed in 128.701375ms remoteaddress=172.24.0.4:7050
+2021-08-23 14:12:32.070 UTC 02ae DEBU [grpc] InfoDepth -> [core]Subchannel Connectivity change to READY
+2021-08-23 14:12:32.071 UTC 02af DEBU [grpc] InfoDepth -> [core]Subchannel Connectivity change to READY
+2021-08-23 14:12:32.071 UTC 02b0 DEBU [grpc] InfoDepth -> [core]pickfirstBalancer: UpdateSubConnState: 0xc0008637c0, {READY <nil>}
+2021-08-23 14:12:32.071 UTC 02b1 DEBU [grpc] InfoDepth -> [core]Channel Connectivity change to READY
+2021-08-23 14:12:32.071 UTC 02b2 DEBU [grpc] InfoDepth -> [core]pickfirstBalancer: UpdateSubConnState: 0xc00087b410, {READY <nil>}
+2021-08-23 14:12:32.071 UTC 02b3 DEBU [grpc] InfoDepth -> [core]Channel Connectivity change to READY
+badger 2021/08/23 14:12:32 INFO: All 0 tables opened in 0s
+badger 2021/08/23 14:12:32 INFO: Replaying file id: 0 at offset: 0
+badger 2021/08/23 14:12:32 INFO: Replay took: 26.249263ms
+
+#################### Node Restart ######################################################
+
+2021-08-23 14:12:32.244 UTC 02b4 ERRO [orderer.consensus.hlmirbft] start -> Node is not fresh and restart channel=channel1 node=2
+2021-08-23 14:12:32.244 UTC 02b5 ERRO [orderer.consensus.hlmirbft] start -> Restarting mirbft node channel=channel1 node=2
+2021-08-23 14:12:34.245 UTC 02b6 DEBU [orderer.consensus.hlmirbft] Log -> truncating WAL%!(EXTRA string=seq_no, uint64=0, string=index, uint64=1) channel=channel1 node=2
+2021-08-23 14:12:34.246 UTC 02b7 DEBU [orderer.consensus.hlmirbft] Log -> reinitialized commit-state%!(EXTRA string=low_watermark, uint64=180, string=stop_at_seq_no, uint64=220, string=len(pending_reconfigurations), int=0, string=last_checkpoint_seq_no, uint64=180) channel=channel1 node=2
+2021-08-23 14:12:34.246 UTC 02b8 DEBU [orderer.consensus.hlmirbft] Log -> reinitialized client%!(EXTRA string=client_id, uint64=0, string=low_watermark, uint64=0, string=high_watermark, uint64=100, string=next_ready_mark, uint64=0, string=next_ack_mark, uint64=0) channel=channel1 node=2
+2021-08-23 14:12:34.247 UTC 02b9 DEBU [orderer.consensus.hlmirbft] Log -> reinitialized client%!(EXTRA string=client_id, uint64=1, string=low_watermark, uint64=4, string=high_watermark, uint64=104, string=next_ready_mark, uint64=4, string=next_ack_mark, uint64=4) channel=channel1 node=2
+2021-08-23 14:12:34.247 UTC 02ba DEBU [orderer.consensus.hlmirbft] Log -> reinitialized client%!(EXTRA string=client_id, uint64=2, string=low_watermark, uint64=0, string=high_watermark, uint64=100, string=next_ready_mark, uint64=0, string=next_ack_mark, uint64=0) channel=channel1 node=2
+2021-08-23 14:12:34.248 UTC 02bb DEBU [orderer.consensus.hlmirbft] Log -> reinitialized client%!(EXTRA string=client_id, uint64=3, string=low_watermark, uint64=0, string=high_watermark, uint64=100, string=next_ready_mark, uint64=0, string=next_ack_mark, uint64=0) channel=channel1 node=2
+2021-08-23 14:12:34.249 UTC 02bc DEBU [orderer.consensus.hlmirbft] Log -> reinitializing during a currently active epoch channel=channel1 node=2
+2021-08-23 14:12:34.249 UTC 02bd INFO [orderer.consensus.hlmirbft] Log -> state machine reinitialized (either due to start, state transfer, or reconfiguration) channel=channel1 node=2
+2021-08-23 14:12:34.249 UTC 02be INFO [orderer.consensus.hlmirbft] Log -> ### TEST LOG ### Function : Tick ,/n<===== true =====> channel=channel1 node=2
+2021-08-23 14:12:34.249 UTC 02bf DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+2021-08-23 14:12:35.009 UTC 02c0 DEBU [orderer.common.cluster] NewStream -> Created new stream to orderer.example.com:7050 with ID of 1 and buffer size of 10
+2021-08-23 14:12:35.009 UTC 02c1 DEBU [orderer.consensus.hlmirbft] consensusSent -> Sending msg of 4 bytes to 1 on channel channel1 took 482.422µs
+2021-08-23 14:12:35.010 UTC 02c2 DEBU [orderer.common.cluster] NewStream -> Created new stream to orderer3.example.com:7050 with ID of 1 and buffer size of 10
+2021-08-23 14:12:35.010 UTC 02c3 DEBU [orderer.consensus.hlmirbft] consensusSent -> Sending msg of 4 bytes to 3 on channel channel1 took 239.616µs
+2021-08-23 14:12:35.010 UTC 02c4 DEBU [orderer.common.cluster] NewStream -> Created new stream to orderer4.example.com:7050 with ID of 1 and buffer size of 10
+2021-08-23 14:12:35.010 UTC 02c5 DEBU [orderer.consensus.hlmirbft] consensusSent -> Sending msg of 4 bytes to 4 on channel channel1 took 230.329µs
+2021-08-23 14:12:35.010 UTC 02c6 DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+2021-08-23 14:12:35.010 UTC 02c7 DEBU [orderer.common.cluster.step] sendMessage -> Send of ConsensusRequest for channel channel1 with payload of size 4 to orderer.example.com(orderer.example.com:7050) took 698.597µs 
+2021-08-23 14:12:35.011 UTC 02c8 DEBU [orderer.common.cluster.step] sendMessage -> Send of ConsensusRequest for channel channel1 with payload of size 4 to orderer3.example.com(orderer3.example.com:7050) took 200.908µs 
+2021-08-23 14:12:35.012 UTC 02c9 DEBU [orderer.common.cluster.step] sendMessage -> Send of ConsensusRequest for channel channel1 with payload of size 4 to orderer4.example.com(orderer4.example.com:7050) took 1.082723ms 
+2021-08-23 14:12:36.245 UTC 02ca INFO [orderer.consensus.hlmirbft] Log -> ### TEST LOG ### Function : Tick ,/n<===== true =====> channel=channel1 node=2
+2021-08-23 14:12:36.245 UTC 02cb DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+2021-08-23 14:12:38.245 UTC 02cc INFO [orderer.consensus.hlmirbft] Log -> ### TEST LOG ### Function : Tick ,/n<===== true =====> channel=channel1 node=2
+2021-08-23 14:12:38.245 UTC 02cd DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+2021-08-23 14:12:40.245 UTC 02ce INFO [orderer.consensus.hlmirbft] Log -> ### TEST LOG ### Function : Tick ,/n<===== true =====> channel=channel1 node=2
+2021-08-23 14:12:40.245 UTC 02cf DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+2021-08-23 14:12:42.245 UTC 02d0 INFO [orderer.consensus.hlmirbft] Log -> ### TEST LOG ### Function : Tick ,/n<===== true =====> channel=channel1 node=2
+2021-08-23 14:12:42.245 UTC 02d1 DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+2021-08-23 14:12:44.245 UTC 02d2 INFO [orderer.consensus.hlmirbft] Log -> ### TEST LOG ### Function : Tick ,/n<===== true =====> channel=channel1 node=2
+2021-08-23 14:12:44.245 UTC 02d3 DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+2021-08-23 14:12:46.246 UTC 02d4 INFO [orderer.consensus.hlmirbft] Log -> ### TEST LOG ### Function : Tick ,/n<===== true =====> channel=channel1 node=2
+2021-08-23 14:12:46.246 UTC 02d5 DEBU [orderer.consensus.hlmirbft] Log -> epoch waiting for state transfer to complete (and possibly to initiate)%!(EXTRA string=epoch_no, uint64=2) channel=channel1 node=2
+

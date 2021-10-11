@@ -1,0 +1,23 @@
+go to 
+
+    mir-netwotk > mir-test-netwotk
+
+and run initialise.sh up and startup the mir network
+
+once the network is up and running , copy the peerOrganisation folder from 
+
+    mir-netwotk > mir-test-network > organizations
+
+and paste it to 
+
+    mir-netwotk > caliper > src
+
+from 
+    mir-netwotk > caliper > src
+
+run 
+    npm install 
+
+and the run sample.sh
+
+P.S change the WORKSPACE variable in sample.sh and set it to the < path-to-caliper-src-dir > in the host system

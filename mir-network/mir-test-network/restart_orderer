@@ -1,0 +1,104 @@
+
+---------------------------- orderer -------------------------------------------------
+
+docker stop 653f16ba4d58
+
+docker cp 653f16ba4d58:/var/hyperledger/production/orderer/ ./backup/653f16ba4d58
+
+docker rm -f 653f16ba4d58
+
+docker run -d \
+            -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp:/var/hyperledger/orderer/msp \
+            -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls:/var/hyperledger/orderer/tls \
+-v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/system-genesis-block/genesis.block:/var/hyperledger/orderer/orderer.genesis.block \
+-v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/backup/653f16ba4d58:/var/hyperledger/production/orderer/ \
+-v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/configtx:/etc/peer/config/ \
+-v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/configtx:/etc/hyperledger/fabric \
+-v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/channel-artifacts:/etc/orderer/artifacts/ \
+            --env-file ./env_orderer.list \
+            --name orderer.example.com \
+	    --network fabric_test \
+           sethuramano/fabric-orderer:latest orderer
+
+
+
+
+
+--------------------------------------- peer -------------------------------------------------
+
+
+
+docker stop f4ae7a32fb4a
+
+docker cp f4ae7a32fb4a:/var/hyperledger/production ./backup/f4ae7a32fb4a
+
+CC_CONTAINERS=$(docker ps | grep dev-f4ae7a32fb4a | awk '{print $1}') 
+if [ -n "$CC_CONTAINERS" ] ; then docker rm -f $CC_CONTAINERS ; fi
+
+CC_IMAGES=$(docker images | grep dev-f4ae7a32fb4a | awk '{print $1}')
+if [ -n "$CC_IMAGES" ] ; then docker rmi -f $CC_IMAGES ; fi
+
+docker rm -f f4ae7a32fb4a
+
+docker run -d -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/backup/f4ae7a32fb4a/:/var/hyperledger/production/ \
+            -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/:/etc/hyperledger/fabric/msp/ \
+            -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/:/etc/hyperledger/fabric/tls/ \
+            -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/config/:/etc/peer/config/ \
+	    -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp:/etc/peer/msp \
+	    -v /home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/channel-artifacts:/etc/peer/artifacts/ \
+-v /var/run/docker.sock:/host/var/run/docker.sock \
+	    --network fabric_test \
+            --env-file ./env.list \
+            --name peer0.org2.example.com \
+            sethuramano/fabric-peer:latest peer node start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ORDERER_GENERAL_TLS_ENABLED=true-
+ORDERER_CA=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+ORDERER_ADMIN_TLS_SIGN_CERT=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt
+ORDERER_ADMIN_TLS_PRIVATE_KEY=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+ORDERER_GENERAL_GENESISMETHOD=file
+ORDERER_GENERAL_GENESISFILE=/var/hyperledger/orderer/orderer.genesis.block
+ORDERER_GENERAL_LOCALMSPID=OrdererMSP
+ORDERER_GENERAL_LOCALMSPDIR=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/orderer-crypto/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts
+ORDERER_GENERAL_TLS_ENABLED=true
+ORDERER_GENERAL_TLS_PRIVATEKEY=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/orderer-crypto/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key
+ORDERER_GENERAL_TLS_CERTIFICATE=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/orderer-crypto/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt
+ORDERER_GENERAL_TLS_ROOTCAS=[/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/orderer-crypto/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt]
+ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/orderer-crypto/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt
+ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY=/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/orderer-crypto/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key
+ORDERER_GENERAL_CLUSTER_ROOTCAS=[/home/sethuraman/Documents/Workspace/Fabric/Mir-BFT/Fly2_plan/Testing/fabric-samples/test-network/orderer-crypto/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt]
